@@ -1,0 +1,17 @@
+{
+  "name": "cypress1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "laptop:headless": "npx cypress run -b chrome -C cypress.config.laptop.js",
+    "laptop:headed": "npx cypress run -b edge --headed -C cypress.config.laptop.js",
+    "mobile:headless": "npx cypress run -b edge -C cypress.config.mobile.js",
+    "mobile:headed": "npx cypress run -b chrome --headed -C cypress.config.mobile.js"
+  },
+  "author": "Lyubov Garashchenko",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^15.8.2"
+  }
+}
